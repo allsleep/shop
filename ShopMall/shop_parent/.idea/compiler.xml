@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common_db" />
+        <module name="business" />
+        <module name="eureka" />
+        <module name="goods" />
+        <module name="service_file" />
+        <module name="gateway_system" />
+        <module name="system" />
+        <module name="common" />
+        <module name="web" />
+        <module name="goods_api" />
+        <module name="canal" />
+        <module name="system_api" />
+        <module name="config" />
+        <module name="user" />
+        <module name="order" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="file_show" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="business" options="-parameters" />
+      <module name="canal" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="common_db" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="file_show" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="gateway_system" options="-parameters" />
+      <module name="goods" options="-parameters" />
+      <module name="goods_api" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="service" options="-parameters" />
+      <module name="service_api" options="-parameters" />
+      <module name="service_file" options="-parameters" />
+      <module name="shop_parent" options="-parameters" />
+      <module name="system" options="-parameters" />
+      <module name="system_api" options="-parameters" />
+      <module name="user" options="-parameters" />
+      <module name="web" options="-parameters" />
+    </option>
+  </component>
+</project>
