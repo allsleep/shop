@@ -1,6 +1,9 @@
 package com.service.goods.dao;
 
-import org.apache.ibatis.annotations.Mapper;
+import com.goods.pojo.Album;
+import tk.mybatis.mapper.common.Mapper;
+import org.springframework.stereotype.Repository;
 
-public interface AlbumMapper extends Mapper {
+@Repository
+public interface AlbumMapper extends Mapper<Album> {
 }
