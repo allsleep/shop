@@ -5,7 +5,7 @@ spring:
   application:
     name: goods
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/goods?serverTimeZone=UTC
     username: root
     password: wu82293382

@@ -8,6 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
+import java.util.Objects;
+
 @SpringBootApplication
 @EnableEurekaClient
 public class GateWayApplication {
@@ -20,7 +22,7 @@ public class GateWayApplication {
         return new KeyResolver() {
             @Override
             public Mono<String> resolve(ServerWebExchange exchange) {
-                return Mono.just(exchange.getRequest().getRemoteAddress().getHostName());
+                return Mono.just(Objects.requireNonNull(exchange.getRequest().getRemoteAddress()).getHostName());
             }
         };
     }

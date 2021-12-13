@@ -15,7 +15,7 @@ import reactor.core.publisher.Mono;
 
 
 
-//@Component
+@Component
 public class AuthorizeFilter implements GlobalFilter, Ordered {
 
     @Override
